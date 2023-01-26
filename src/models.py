@@ -28,38 +28,38 @@ class Planetas(Base):
     #nombre=columna(entero,es una clave primaria ) esto es pa crear columnas
     id = Column(Integer, primary_key=True)
     #nombre=clumna(tipo de dato que va a ir, si acepta campos vacios o no)
-    nombre = Column(String(250), nullable=False)
-    apellido = Column(String(250), nullable=False)
-    email = Column(String(250), nullable=False)
+    name = Column(String(250), nullable=False)
+    climate = Column(String(250), nullable=False)
+    gravity = Column(String(250), nullable=False)
 
 
-    class Vehiculos(Base):
+class Vehiculos(Base):
     __tablename__ = 'vehiculos'#aca si puedo poner en minus
     # Here we define columns for the table person
     # Notice that each column is also a normal Python instance attribute.
     #nombre=columna(entero,es una clave primaria ) esto es pa crear columnas
     id = Column(Integer, primary_key=True)
     #nombre=clumna(tipo de dato que va a ir, si acepta campos vacios o no)
-    nombre = Column(String(250), nullable=False)
-    apellido = Column(String(250), nullable=False)
-    email = Column(String(250), nullable=False)
+    name = Column(String(250), nullable=False)
+    model = Column(String(250), nullable=False)
+    length = Column(String(250), nullable=False)
 
 
-    class personajes(Base):
+class Personajes(Base):
     __tablename__ = 'personajes'#aca si puedo poner en minus
     # Here we define columns for the table person
     # Notice that each column is also a normal Python instance attribute.
     #nombre=columna(entero,es una clave primaria ) esto es pa crear columnas
     id = Column(Integer, primary_key=True)
     #nombre=clumna(tipo de dato que va a ir, si acepta campos vacios o no)
-    nombre = Column(String(250), nullable=False)
-    apellido = Column(String(250), nullable=False)
-    email = Column(String(250), nullable=False)
+    name = Column(String(250), nullable=False)
+    gender = Column(String(250), nullable=False)
+    homeworld = Column(String(250), nullable=False)
 
 
 
 
-class favoritos(Base):
+class Favoritos(Base):
     __tablename__ = 'favoritos'
     # Here we define columns for the table address.
     # Notice that each column is also a normal Python instance attribute.
